@@ -19,8 +19,11 @@ function redirect() {
 continueBtn.addEventListener("click", () => {
   let userAge = parseInt(inputedAge.value);
   userAge >= 16
-    ? ((message.textContent = "Access Granted"), redirect())
-    : (message.classList.remove("text-green-500"),
+    ? (message.classList.remove("text-red-500", "text-green-500"),
+      message.classList.add("text-green-500"),
+      (message.textContent = "Access Granted"),
+      redirect())
+    : (message.classList.remove("text-green-500", "text-red-500"),
       message.classList.add("text-red-500"),
       (message.textContent =
         "❌ Access not Granted, You must be 16 years or older"));
