@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Javascript -->
+    <script src="./dstv.js" defer></script>
+    <title>Dstv Checker</title>
+  </head>
+  <body class="bg-black">
+    <div class="h-screen flex flex-col justify-center items-center">
+      <h1 class="text-white text-6xl text-center mt-5">Welcome to Dstv 📺</h1>
+      <h3 class="text-white mt-6">Please Input you age</h3>
+      <input
+        id="age"
+        class="rounded-full w-3/6 h-12 mt-2 text-center"
+        type="number"
+        value=""
+      />
+      <p id="message" class="text-green-500"></p>
+      <button id="continue" class="bg-blue-600 rounded-full px-3 py-2 mt-5">
+        Continue
+      </button>
+    </div>
+  </body>
+</html>

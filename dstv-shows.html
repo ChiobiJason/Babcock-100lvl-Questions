@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Javascript -->
+    <script src="./dstv-shows.js" defer></script>
+
+    <title>Dstv Shows</title>
+  </head>
+  <body
+    class="h-screen bg-blue-500 text-center flex flex-col justify-center items-center"
+  >
+    <div class="bg-black text-white text-3xl m-4 px-2">
+      <h1>Which Shows do you prefer?</h1>
+    </div>
+    <div class="text-2xl">
+      <input type="radio" name="fav_show" id="nigerian" />
+      <label for="nigerian">Nigerian Shows</label> <br />
+      <input type="radio" name="fav_show" id="american" />
+      <label for="american">American Shows</label>
+    </div>
+    <p id="message" class="text-xl text-red-600 hidden">Please Select a Show</p>
+    <button id="done" class="bg-green-500 rounded-full text-2xl px-4 py-2 m-4">
+      Done
+    </button>
+  </body>
+</html>
